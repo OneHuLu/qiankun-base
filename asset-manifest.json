@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/qiankun-base/static/css/main.073c9b0a.css",
-    "main.js": "/qiankun-base/static/js/main.36aed724.js",
+    "main.js": "/qiankun-base/static/js/main.b9a856c5.js",
     "static/js/787.a0928356.chunk.js": "/qiankun-base/static/js/787.a0928356.chunk.js",
     "index.html": "/qiankun-base/index.html",
     "main.073c9b0a.css.map": "/qiankun-base/static/css/main.073c9b0a.css.map",
-    "main.36aed724.js.map": "/qiankun-base/static/js/main.36aed724.js.map",
+    "main.b9a856c5.js.map": "/qiankun-base/static/js/main.b9a856c5.js.map",
     "787.a0928356.chunk.js.map": "/qiankun-base/static/js/787.a0928356.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.36aed724.js"
+    "static/js/main.b9a856c5.js"
   ]
 }
