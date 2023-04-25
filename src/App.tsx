@@ -16,7 +16,7 @@ const App: React.FC = () => {
   const [menuKey, setMenuKey] = useState(0);
 
   // 判断当前是否为主应用
-  const isInMainProject = ["/", "/qiankun-base"].includes(
+  const isInMainProject = ["/", "/qiankun-base","/qiankun-base/"].includes(
     window.location.pathname
   );
 
