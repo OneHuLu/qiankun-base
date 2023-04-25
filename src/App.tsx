@@ -60,7 +60,7 @@ const App: React.FC = () => {
                     fontSize: "30px",
                   }}
                 >
-                  主应用展示页面
+                  主应用展示页面,github pages 自动构建检测
                 </div>
               ) : (
                 <div id={HeadMenuItemsList[menuKey]?.id} /> // id 要与 registerMicroApps 当中的 container 保持一致
