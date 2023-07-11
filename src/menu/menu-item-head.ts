@@ -1,12 +1,17 @@
 const HeadMenuItemsList = [
   {
+    id: "qk-base",
+    label: "首页",
+    hrefPath: "/",
+  },
+  {
     id: "qk-micro-react",
-    label: "微前端React",
+    label: "React",
     hrefPath: "/qk-micro-react",
   },
   {
     id: "qk-micro-vue",
-    label: "微前端Vue",
+    label: "Vue",
     hrefPath: "/qk-micro-vue",
   },
 ];

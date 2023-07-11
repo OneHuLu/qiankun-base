@@ -1,7 +1,13 @@
 import React, { useState } from "react";
+// router
 import { BrowserRouter } from "react-router-dom";
+// antd
 import { Layout, Menu, theme } from "antd";
+// tab 配置项
 import HeadMenuItemsList from "./menu/menu-item-head";
+// 自定义组件
+import HomeIndex from "./page/home";
+// style
 import "./App.css";
 
 const { Header, Content } = Layout;
@@ -16,7 +22,7 @@ const App: React.FC = () => {
   const [menuKey, setMenuKey] = useState(0);
 
   // 判断当前是否为主应用
-  const isInMainProject = ["/", "/qiankun-base","/qiankun-base/"].includes(
+  const isInMainProject = ["/", "/qiankun-base", "/qiankun-base/"].includes(
     window.location.pathname
   );
 
@@ -24,11 +30,14 @@ const App: React.FC = () => {
     <div className="App">
       <BrowserRouter>
         <Layout className="layout">
-          <Header>
+          <Header
+            style={{ position: "sticky", top: 0, zIndex: 1, width: "100%" }}
+          >
             <div className="logo" />
             <Menu
               theme="dark"
               mode="horizontal"
+              defaultSelectedKeys={[menuKey + ""]}
               items={HeadMenuItemsList.map((item, index) => {
                 return {
                   key: index,
@@ -55,13 +64,7 @@ const App: React.FC = () => {
             >
               {/* 根据路径判断当前是否在主应用中 */}
               {isInMainProject ? (
-                <div
-                  style={{
-                    fontSize: "30px",
-                  }}
-                >
-                  主应用展示页面
-                </div>
+                <HomeIndex />
               ) : (
                 <div id={HeadMenuItemsList[menuKey]?.id} /> // id 要与 registerMicroApps 当中的 container 保持一致
               )}
